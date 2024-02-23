@@ -1,14 +1,9 @@
-# path-between-cities
+**Project Title:** City Route Finder using Graphs
 
-Considering a rectangular city (let’s say star_city) partitioned into a grid of square cells as shown in the image-
+**Project Description:**
+The City Route Finder project focuses on finding routes between specified nodes in a graph data structure representing a rectangular city area. Utilizing Python programs and graph data structures, the project aims to implement breadth-first search (BFS) or depth-first search (DFS) algorithms to find routes between nodes and cities within the city grid system. The project utilizes a 2D matrix list to store altitude data, enabling the determination of viable routes based on altitude constraints. Skills and tools covered include graph operations, 2D matrix manipulation, list operations, searching techniques, and data structures.
+
+## Description
+The project considers a rectangular city area, star_city, divided into a grid of square cells. Each border of star_city is adjacent to a different city: Greendale at the top, Smallville at the right, Duckburg at the bottom, and Blue Valley at the left. Each square cell represents the altitude of the land area, ranging from 1 (lowest) to 10 (highest). A person can move from a higher altitude area to a lower altitude area. Cells on the border are connected to the respective border city. The project seeks to find routes from a source cell to a destination cell, as well as routes from Blue Valley to Smallville.
 
 ![Screenshot (990)](https://user-images.githubusercontent.com/75752026/194089760-c5ce28a8-1512-4a26-b56a-7b9e044e26d3.png)
-
-- Each of the borders of the star_city are surrounded by different cities- Greendale at top, Smallville at right, Duckburg at bottom and Blue Valley at left.
-- Each square cell represents the altitude of the land area (1 lowest and 10 highest). A person can climb down from a higher altitude area to a lower altitude area. So, a person from a particular cell can reach to its adjacent cell (up, left, right, bottom) only if the adjacent cell is of equal or lower altitude.
-- Also, all the cells on the border are connected to the respective border city. That means a person can reach a particular neighboring city from any of the cells lying on the border for that city.
-
-We find two paths in this code-
-
-1.	Any 1 route (if exists) from the cell marked Source to the cell marked Destination. 
-2.	Any 1 route (if exists) from Blue Valley to Smallville
